@@ -3,6 +3,6 @@
 Notebooks para modelagem em `AMPL` com `amplpy` e solver gratuito (`HiGHS`/`CBC`).
 
 ```bash
-cd /home/m9t/Documents/ufg/po
+/yourdirectory
 uv sync
 ```
