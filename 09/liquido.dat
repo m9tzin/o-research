@@ -1,36 +1,16 @@
 set DC    := DC1 DC2 DC3 ;
 set PLANO := Basic Pro Ultra ;
 
-param receita :=
-    Basic   15
-    Pro     30
-    Ultra   60 ;
+param H          := 168 ;
+param tol_balanc := 100 ;
+param frac_max   := 0.60 ;
 
-param gpu_pw :=
-    Basic   1
-    Pro     2
-    Ultra   4 ;
+param :  preco  kw  dem_max  dep_gpu  custo_op :=
+  Basic    90    5    700      10        5
+  Pro     180    8    900      30       10
+  Ultra   360   12    600      80       20 ;
 
-param capac :=
-    DC1  3000
-    DC2  4000
-    DC3  3500 ;
-
-param pot :=
-    DC1  2800
-    DC2  3600
-    DC3  3200 ;
-
-param dem_max :=
-    Basic  6000
-    Pro    4000
-    Ultra  1500 ;
-
-# Custo de energia elétrica por DC ($/kW/dia)
-param elec_custo :=
-    DC1  13.50
-    DC2  11.00
-    DC3  12.00 ;
-
-# OPEX fixo: água + depreciação ($/slot/dia)
-param opex := 0.70 ;
+param :  cap_inst  cap_kw  preco_kwh  wue  preco_agua :=
+  DC1      600     4500     0.12     1.8    3.00
+  DC2      800     5000     0.08     1.5    2.50
+  DC3      500     3000     0.06     0.5    1.80 ;
