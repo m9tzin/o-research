@@ -1,0 +1,17 @@
+set OP   := Op1 Op2 Op3 ;
+set PROD := Trem Caminhao Carro ;
+
+param margem :=
+    Trem      3
+    Caminhao  2
+    Carro     5 ;
+
+param tempo : Trem  Caminhao  Carro :=
+    Op1        1      2        1
+    Op2        3      0        2
+    Op3        1      4        0 ;
+
+param cap :=
+    Op1  430
+    Op2  460
+    Op3  420 ;

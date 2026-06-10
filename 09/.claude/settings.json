@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Read(//home/m9t/Documents/ufg/o-research/07/**)",
+      "Read(//home/m9t/Documents/ufg/o-research/08/**)",
+      "Read(//home/m9t/Documents/ufg/o-research/06/simplex/**)",
+      "Bash(find /home/m9t/Documents/ufg -name \"bruto*\" -o -name \"liquido*\" 2>/dev/null | head -30)",
+      "Read(//home/m9t/Documents/ufg/**)",
+      "Bash(find /home/m9t/Documents/ufg -name \"*.mod\" -o -name \"*.dat\" 2>/dev/null | head -20)",
+      "Bash(rtk grep *)",
+      "Bash(rtk read *)"
+    ]
+  }
+}
